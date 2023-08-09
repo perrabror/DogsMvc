@@ -1,0 +1,25 @@
+﻿@model List<DogsMvc.Models.Dog>
+
+<!Doctype html>
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="utf-8" />
+
+
+    </head>
+    <body>
+        <h1>Index</h1>
+        
+        <ul>Dogs
+        @foreach(var dog in Model)
+        {
+            <li>@dog.Name</li>
+        
+        }
+    </ul>
+    @*<a asp-controller="Dogs" asp-action="Create">Add a Dog</a>*@
+    <a href="Create">Add a Dog</a>
+    </body>
+
+    </html>
